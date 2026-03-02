@@ -1,0 +1,6 @@
+# Netlify config for Sovereign-Omega AI docs
+
+[build]
+  publish = "public/"
+  command = "mkdocs build -d public"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF docs mkdocs.yml CONTRIBUTING.md CODE_OF_CONDUCT.md LICENSE"
